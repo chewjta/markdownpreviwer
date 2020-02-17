@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+
+body {
+  margin: 10px 0;
+}
+
+#output,
+.title {
+  display: inline-block;
+}
+
+$default-border: 1px solid darken(#588BAE, 35%);
+$shadow: 1px 1px 10px 2px darken(#588BAE, 20%);
+
+.colorScheme {
+  background-color: lighten(#588BAE, 30%);
+  border: $default-border;
+  box-shadow: $shadow;
+  border-top: none;
+}
+
+.inputWrap{
+  display:inline-block;
+  width: 600px;
+  margin: 50px 40px;
+  padding-left:40px;
+  .toolbar {
+    width: 99%;
+  }
+  textarea {
+    @extend .colorScheme;
+    width: 99%;
+    min-height: 1000px;
+    margin-bottom: -5px;
+    resize: vertical;
+    outline: none;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 12px;
+  }
+}
+
+.outputWrap{
+  float:right;
+  width: 600px;
+  margin: 50px 40px;
+  padding-right:40px;
+  overflow-wrap: break-word;
+    .toolbar {
+      width: 99%;
+    }
+    #output {
+      @extend .colorScheme;
+    width: 99%;
+    min-height: 1000px;
+    margin-bottom: -5px;
+    resize: vertical;
+    outline: none;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 12px;
+    }
+}
+
+.maximized{
+  width: 96%;
+  min-height: 100vh;
+  margin: auto;
+  textarea {
+    min-height: 95vh;
+    resize: none;
+  }
+}
+
+.hide{
+  display:none
+}
+
+
+.toolbar {
+  position: relative;
+  background-color: rgb(149, 218, 239);
+  padding: 4px 4px 4px 4px;
+  border: 1px solid black;
+  font-family: 'Lacquer', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  i {
+    width: 25px;
+    color: black;
+    margin-left: 5px;
+  }
+  .fa-arrows-alt,
+  .fa-compress {
+    position: absolute;
+    right: -5px;
+    top: 8px;
+  }
+}
+
+.fa-compress,
+.fa-arrows-alt {
+  &:hover {
+  color: rgb(14, 28, 224);
+  cursor: pointer;
+  }
+}
+
+
+blockquote {
+  border-left: 3px solid #224B4B;
+  color: rgba(34, 75, 75, 0.781);
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+code {
+  background: rgba(255, 255, 255, 0.522);
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom:20px;
+}
+
+pre {
+  background: rgba(255, 255, 255, 0.522);
+  padding: 5px 0 5px 5px;
+}
+
+td,
+  th {
+    border: 2px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+  }
+
+  .author{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-family: 'Lacquer', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  a{
+    text-decoration:none;
+  }
+  :hover {
+    color:black;
+    cursor: pointer;
+  }
+}

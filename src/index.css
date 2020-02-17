@@ -5,9 +5,53 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+
+  }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.inputWrap{
+
+}
+
+.outputWrap{
+
+}
+
+.maximized{
+
+}
+
+.hide{
+  display:none
+}
+
+
+.toolbar{
+  position:relative;
+  background-color:blue;
+  border: 1px solid black;
+  padding: 4px 4px 3px 3px;
+}
+
+.toolbar > i{
+      width: 25px;
+      color: black;
+      margin-left: 5px;
+}
+
+.toolbar > .fa-arrows-alt,
+  .fa-compress {
+    position: absolute;
+    right: -5px;
+  }
+
+.fa-arrows-alt,.fa-compress:hover {
+  color: red;
+  cursor: pointer;
+  }
